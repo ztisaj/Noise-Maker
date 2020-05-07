@@ -48,7 +48,6 @@
             
             
             const keys = Array.from(document.querySelectorAll('.key'));             
-            console.log(keys);
             keys.forEach(function(keys){
                 keys.addEventListener("click", function() {
                 const audio = document.querySelectorAll(`audio`);
@@ -56,7 +55,6 @@
                 classKey.classList.add('playing');
                 audio.currentTime=0;
                 audio[this.id].play();
-                console.log(this.id);
                 });
             })
             
